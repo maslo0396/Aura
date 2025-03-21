@@ -1,0 +1,352 @@
+@use 'mixin' as m;
+
+
+@include m.desktop{
+    [class*="__inner"]{
+        padding: 0 36px;
+    }
+    .header__nav, .nav{
+        font-size: 16px;
+    }
+    // MAIN=====================================
+    .main{
+        background: url(./img/aura-top.png) no-repeat ;
+        background-position: right -600px center;
+    }
+    // AUCTION=====================================
+
+    .auction-main{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .auction-main__info {
+        gap: 30px;
+    }
+    .auction-author{
+        min-width: 0;
+        width: 100%;
+        max-width: 225px;
+    }
+    .author-props{
+        flex-direction: column;
+    }
+    // SUBSCRIPTION==================================
+
+    .subscription{
+        padding-top: 30px;
+        background:url(./img/Frame30.png) no-repeat var(--color-red);
+        background-position: right center;
+        background-size: 400px;
+        }
+
+    .sales-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 30%);
+    }
+    .footer-top{
+        padding: 20px 0;
+    }
+}
+
+@include m.laptop{
+    .header__inner{
+        padding: 0;
+    }
+   
+    .header__logo{
+        margin-left: 12px;
+        margin-right: auto;
+    }
+    
+    .nav-wallet{
+        margin-right: 12px;
+    }
+    // MAIN=====================================
+        .m-info{
+            max-width: 500px;
+            h1{
+                font-size: 50px;
+                line-height: 84px;
+            }
+        }
+        .link__buttom{
+            font-size: 16px;
+        }
+    // AUCTION=====================================    
+    .auction-author__subtitle{
+        font-size: 40px;
+    }
+    .auction-main__img {
+        max-width: 383px;
+    }
+    .auction-author__props--left{
+        max-width: 296px;
+        padding: 25px;
+    }
+    .author-timer{
+        padding: 25px;
+        max-width: 430px;
+        min-width: 0;
+        width: 100%;
+        background: var(--color-black);
+    }
+    .product{
+        justify-content: center;
+    }
+    .product__card{
+        min-width: 0;
+        max-width: 290px;
+        width: 100%;
+    }
+     // SUBSCRIPTION==================================
+
+     .subscription{
+        background-size: 400px;
+        background-position: bottom -100px center;
+    }
+    .subscription-form{
+        margin-bottom: 200px;
+    }
+
+    // PORTFOLIO========================================
+    .portfolio__content{
+        flex-direction: column;
+    }
+    .portfolio__form{
+        gap: 16px;
+    }
+
+    // TOP-SALES=========================================
+    .sales-cards{
+        gap: 15px;
+    }
+    .card__right{
+        h3{
+            font-size: 25px;
+        }
+    }
+    .card__author{
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .sales-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 32%);
+    }
+
+    .top-info__inner{
+        background-size: 48%;
+    }
+}
+
+@include m.tablet{
+    [class*="__inner"]{
+        padding: 0 12px;
+    }
+    .header__nav{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .nav{
+
+        border-top: 1px solid #c4c4c4;
+        padding: 13px 0;
+        margin-top: 20px;
+        margin-right: 0;
+        width: 100%;
+        order: 3;
+        ul{
+            justify-content: center;
+        }
+    }
+    // MAIN=====================================
+
+        .main{
+            background: url(./img/aura-top.png) no-repeat var(--color-black);
+            background-position: bottom -500px center;
+            background-size: cover;
+        }
+        .m-info{
+            h1{
+                font-size: 35px;
+                font-weight: 400;
+                line-height: 42px;
+            }
+        }
+        .m-info__link{
+            display: flex;
+            flex-direction: column;
+        }
+        .link__buttom{
+            line-height: 16px;
+        }
+
+    // AUCTION=====================================   
+        .auction-main{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .auction-main__img{
+            margin: 0 auto;
+            max-width: 460px;
+            width: 100%;
+        }
+        .auction-header{
+            h1{
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 36px;
+            }
+        }
+    //PORTFOLIO=======================================
+        .portfolio__text{
+            h1{
+                font-size: 30px;
+                line-height: 36px;
+            }
+            h2{
+                display: none;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .file__content{
+            font-size: 16px;
+        }
+        input[name=telegram]{
+            font-size: 16px;
+        }
+    
+    // TOP-SALES=========================================
+
+    .sales-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    .card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 160px;
+        width: 100%;
+    }
+    .card__left{
+        display: flex;
+        width: 100%;
+        border-radius: 40px 40px 0 0 ;
+        padding: 12px 12px 0 12px;
+        img{
+            position: relative;
+            margin: 0 auto;
+            bottom: -20px;
+        }
+    }
+    .card__right{
+        margin-bottom: 16px;
+    }
+
+
+    .top-info{
+        background: url(./img/Frame46.png) no-repeat bottom 20px center  rgb(55, 55, 62);
+        
+    }
+    .top-info__inner{
+       background: none;
+
+    }
+    .top-info__content{
+        margin-bottom: 196px;
+    }
+}
+
+
+@include m.tablet_sm{
+    .nav-wallet__mob{
+        display: block;
+    }
+    .nav-wallet{
+        display: none;
+    }
+    .header__logo {
+        margin-left: 0px;
+    }
+    // MAIN=====================================
+
+    // AUCTION=====================================
+    .auction-main__img{
+        margin: 0 auto;
+        max-width: 290px;
+    }
+    .file__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .top-sales__header{
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .top-info__header{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .top-info__item{
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    // FOOTER=========================================
+    .footer-top__inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-top__logo{
+        margin-bottom: 15px;
+    }
+    .footer-top__list{
+        border-top: 1px solid var(--color-black);
+        width: 110%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-top__item{
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+}
+
+@include m.mobile{
+    .main{
+        background: url(./img/stickers_hero.png) no-repeat  var(--color-black);
+        background-position: bottom center;
+        background-size: contain;
+    }
+
+    .top-info{
+        background-size: contain;
+    }
+
+    // AUCTION=====================================
+    
+}
+
+@include m.mobile_sm{
+}
