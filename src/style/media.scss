@@ -10,7 +10,7 @@
     }
     // MAIN=====================================
     .main{
-        background: url(./img/aura-top.png) no-repeat ;
+        background:var(--color-black) url(./img/aura-top.png) no-repeat ;
         background-position: right -600px center;
     }
     // AUCTION=====================================

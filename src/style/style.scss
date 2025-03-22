@@ -128,7 +128,8 @@
 
 // MAIN=======================================================//
 .main{
-    background: url(./img/aura-top.png) no-repeat;
+    background-image:  url(./img/aura-top.png);
+    background-repeat: no-repeat;
     background-position: right -200px center;
 }
 .m-info{
