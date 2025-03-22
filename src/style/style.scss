@@ -17,7 +17,9 @@
 }
 
 .button{
+    font-size: 20px;
     font-weight: 700;
+    line-height: 20px;
     padding: 25px 54px;
     border-radius: 40px;
     &--black {
@@ -26,16 +28,48 @@
         color: #fff;
         font-size: 16px;
         line-height: 16px;
+        &:hover, &:focus-visible{
+            background: var(--color-primary);
+            color: var(--color-black);
+        }
+    }
+    &--gradient{
+        background: var(--color-gradient);
+        &:hover, &:focus-visible{
+            
+        }
+    }
+    &--black-transparent{
+        color: var(--color-white);
+        border: 2px solid transparent;
+        background: linear-gradient(#000000, #0a0a0a 0) padding-box,
+        linear-gradient(180.00deg, rgb(70, 244, 219) 27.083%,rgb(87, 210, 114) 100%) border-box;
+        &:hover, &:focus-visible{
+            background: linear-gradient(180.00deg, rgb(70, 244, 219) 27.083%,rgb(87, 210, 114) 100%);
+            border: 2px solid
+        }
+    }
+    &--primary{
+        max-width: 296px;
+        background: var(--color-primary);
+        &:hover, &:focus-visible{
+            background: linear-gradient(180.00deg, rgb(70, 244, 219) 27.083%,rgb(87, 210, 114) 100%);
+        }
+    }
+    &--transparent{
+        margin: 30px auto 90px auto;
+        padding: 25px 55px;
+        border: 5px solid var(--color-primary);
+        background: transparent;
+        &:hover, &:focus-visible{
+            background: var(--color-primary);
+        }
     }
 
-
-//     &:hover, &:focus{
-//         background: var( --color-primary);
-//         color:var( --color-black);
-//     }
-//     &:active{
-//         background: var(--color-primary_active);
-//     }
+    &:active{
+        background: var(--color-primary_active);
+        border-color: var(--color-primary_active);
+    }
  }
 .nav-wallet{
     background: var(--color-black);
@@ -45,17 +79,6 @@
     line-height: 16px;
 }
 
-// .button {
-//     height: 60px;
-//     padding: 20px;
-//     border-radius: 40px;
-
-//     &--green {
-//         background-color: green;
-
-//         &:hover {
-
-//         }
 
 .main, .footer-bottom, .top-sales, .stickers{
     background: var(--color-black);
@@ -122,17 +145,6 @@
 .m-info__link{
     display: flex;
     gap: 30px;
-}
-.link__buttom{ 
-    color: var(--color-white);
-    font-size: 20px;
-    background: linear-gradient(180.00deg, rgb(70, 244, 219) 27.083%,rgb(87, 210, 114) 100%);
-}
-
-.link__buttom--right{
-    border: 2px solid transparent;
-    background: linear-gradient(#000000, #0a0a0a 0) padding-box,
-    linear-gradient(180.00deg, rgb(70, 244, 219) 27.083%,rgb(87, 210, 114) 100%) border-box;
 }
 
 // AUCTION ========================================================//
@@ -256,24 +268,15 @@
     }
     
 }
-.author-props__btn {
-    max-width: 296px;
-    font-size: 20px;
-    line-height: 20px;
-    background: var(--color-primary);
-    &:hover, &:focus-visible{
-        background: linear-gradient(180.00deg, rgb(70, 244, 219) 27.083%,rgb(87, 210, 114) 100%);
-    }
-    &:active{
-        background: var(--color-primary_active);
-    }
-}
 
 .auction-card{
     display: flex;
     flex-direction: column;
     font-size: 20px;
     line-height: 24px;
+    a{
+        margin: 0 auto;
+    }
 }
 
 .product {
@@ -328,22 +331,6 @@
     font-size: 16px;
     line-height: 16px;
     
-}
-
-.auction-card__btn{
-    margin: 30px auto 90px ;
-    padding: 25px 55px;
-    border: 5px solid var(--color-primary);
-    background: transparent;
-    a{
-        text-decoration: none;
-        color: var(--color-black);
-        font-size: 20px;
-    }
-    &:active{
-        border: 5px solid var(--color-primary_active);
-        ;
-    }
 }
 
 // STICKERS==================================================================//
@@ -459,10 +446,7 @@ input[name="firstname"], [name="email"], [name="telegram"] {
     font-size: 20px;
     line-height: 20px;
 }
-.subscription-form__btn{
-    background: var(--color-primary);
-    max-width: 290px;
-}
+
 .subscription-form__agreement{
     display: flex;
     gap: 8px;
@@ -587,19 +571,6 @@ input[name="firstname"], [name="email"], [name="telegram"] {
     }
 }
 
-.portfolio__button {
-    max-width: 296px;
-    background: var(--color-primary);
-    font-size: 20px;
-    line-height: 20px;
-
-    &:hover, &:focus-visible{
-        background: linear-gradient(180.00deg, rgb(70, 244, 219) 27.083%,rgb(87, 210, 114) 100%);
-    }
-    &:active{
-        background: var(--color-primary_active);
-    }
-}
 input[name="telegram"] {
     background: var(--color-grey_light);
     color: #000000;
