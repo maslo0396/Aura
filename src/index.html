@@ -190,36 +190,63 @@
                     <img src="./img/fire.png" alt="FIRE">
                     <h1>Новые стикеры</h1>
                 </div>
-                <div class="stickers-slider slider">
-                    <div class="slides">
-                        
-                        <div class="sleders-box">
-                        <input type="radio" name='r' id="r1" checked>
-                        <input type="radio" name='r' id="r2">
-                        <input type="radio" name='r' id="r3">
-                        <input type="radio" name='r' id="r4">
-                            <div class="slide s1"><img src="./img/Ghost-2.png" alt="">
-                                                <img src="./img/Ghost-1.png" alt="">
-                                                <img src="./img/Parental Advisory 1.png" alt="">
-                            </div>
-                            <div class="slide"><img src="./img/chrome is dead.png" alt="">
-                                               <img src="./img/Infinity 8 1.png" alt="">
-                            </div>
-                            <div class="slide"><img src="./img/IAMDESIGNER Circle 2 1.png" alt="">
-                                               <img src="./img/Global 30.png" alt="">
-                                               <img src="./img/Frame 26.png" alt="">
-                            </div>
-                            <div class="slide"><img src="./img/4.png" alt=""></div>
+                <div class="swiper stickers-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper stickers-wrapper">
+                      <!-- Slides -->
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Ghost-1.png" alt="">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Ghost-2.png" alt="">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Parental Advisory 1-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/chrome is dead.png" alt="">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Infinity 8 1.png" alt="">
+                        </div>
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/IAMDESIGNER Circle 2 1.png" alt="">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Global 30.png" alt="">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Frame 26.png" alt="">
+                        </div>
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/4.png" alt="">
                         </div>
                     </div>
-                    <div class="navigation">
-                        <label for="r1" class="bar">1</label>
-                        <label for="r2" class="bar">2</label>
-                        <label for="r3" class="bar">3</label>
-                        <label for="r4" class="bar">4</label>
-                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination stickers-pagination"></div>
                 </div>
+
+
+                <!-- <div class="swiper stickers-swiper__small">
+                    <!-- Additional required wrapper -->
+                    <!-- <div class="swiper-wrapper stickers-wrapper">
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Ghost-1.png" alt="">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Ghost-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Parental Advisory 1-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/chrome is dead.png" alt="">
+                        </div>
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/IAMDESIGNER Circle 2 1.png" alt="">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Infinity 8 1.png" alt="">
+                        </div>
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Global 30.png" alt="">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/Frame 26.png" alt="">
+                        </div>
+                        <div class="swiper-slide stickers-slide">
+                            <img class="stickers-slide__img stickers-slide__img--big" src="./img/4.png" alt="">
+                        </div>
+                    </div> -->
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination stickers-pagination-2"></div>
+                </div> --> -->
             </div>
+            <script src="./swiper-bundle.js"></script>
         </section>
         <section class="subscription">
             <div class="subscription__inner">
