@@ -17,17 +17,17 @@
 }
 
 .button{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1.25rem;
     padding: 25px 54px;
     border-radius: 40px;
     &--black {
         background: var(--color-black);
         padding: 17px 43px;
         color: #fff;
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 1rem;
+        line-height: 1rem;
         &:hover, &:focus-visible{
             background: var(--color-primary);
             color: var(--color-black);
@@ -75,8 +75,8 @@
     background: var(--color-black);
     padding: 17px 43px;
     color: #fff;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1rem;
 }
 
 
@@ -88,9 +88,9 @@
     display: flex;
     align-items: center;
     padding: 10px 0px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 .nav{
     margin-right: auto;
@@ -137,8 +137,6 @@
     margin: 160px 0;
     color: var(--color-white);
     h1{
-        font-size: 70px;
-        line-height: 84px;
         text-align: left;
         margin-bottom: 35px;
     }
@@ -156,7 +154,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-   h1{
+   h2{
     text-align: left;
    }
 
@@ -164,8 +162,8 @@
     display: flex;
     align-items: center;
     color: var(--color-red);
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1rem;
     text-align: center;
     border: 2px solid var(--color-red);
     border-radius: 40px;
@@ -194,7 +192,7 @@
     justify-content: space-between;
 }
 .auction-author {
-    width: 32%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -204,14 +202,14 @@
     border-radius: 23px;
     background:var(--color-grey_light);
     span{
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
     }
 }
 .auction-author__subtitle {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 3rem;
 }
 
 .author-props {
@@ -226,18 +224,18 @@
     border-radius: 40px;
     background: var(--color-grey_light);
     span{
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 700;
-        line-height: 20px;
+        line-height: 1.25rem;
         margin-bottom: 15px;
     }
     h3{
-        font-size: 48px;
+        font-size: 3rem;
         margin-bottom: 6px;
     }
     p{
         color: rgb(149, 149, 157);
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 .author-timer {
@@ -250,7 +248,7 @@
     background: url(./img/alarm-clock.svg) no-repeat 90% 50% var(--color-black);
     padding: 32px;
     span{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 .author-timer__content{
@@ -262,10 +260,10 @@
     flex-direction: column;
     align-items: center;
     span{
-        font-size: 48px;
+        font-size: 3rem;
     }
     p{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     
 }
@@ -273,8 +271,8 @@
 .auction-card{
     display: flex;
     flex-direction: column;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     a{
         margin: 0 auto;
     }
@@ -311,26 +309,26 @@
     padding-left: 16px;
     color: var(--color-white);
     h3{
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
     }
     h4{
         color: var(--color-primary);
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
     }
     span{
         color: rgb(149, 149, 157);
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 1rem;
+        line-height: 1rem;
     }
 }
 .card-info__author{
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1rem;
     
 }
 
@@ -342,7 +340,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    h1{
+    h2{
         color: var(--color-white);
     }
 }
@@ -381,9 +379,8 @@
     background:url(./img/Frame\ 29.png) 100% 50% no-repeat var(--color-red);
 }
 .subscription__inner{
-    h1{
+    h4{
         color: var(--color-white);
-        font-size: 20px;
         margin-bottom: 30px;
     }
 }
@@ -400,16 +397,16 @@ input[name="firstname"], [name="email"], [name="telegram"] {
     border-radius: 40px;
     background: var(--color-black);
     color: var(--color-grey_light);
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
 }
 
 .subscription-form__agreement{
     display: flex;
     gap: 8px;
     color: var(--color-white);
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
 }
 .agreement__checkbox{
     border: 1px solid var(--color-white);
@@ -423,7 +420,7 @@ input[name="firstname"], [name="email"], [name="telegram"] {
         position: absolute;
         width: 0px;
         height: 0px;
-        font-size: 30px;
+        font-size: 1.87rem;
         background-image: url("./img/checkbox.svg");
         background-repeat: no-repeat;
         background-position: center;
@@ -457,15 +454,10 @@ input[name="firstname"], [name="email"], [name="telegram"] {
     gap: 16px;
     flex: 50%;
     color: var(--color-black);
-    
-    h2{
-        font-size: 20px;
-        line-height: 24px;
-    }
     p{
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 1.87rem;
     }
 }
 .portfolio__form {
@@ -534,9 +526,9 @@ input[name="telegram"] {
 }
 .file__content{
     color: rgb(149, 149, 157);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.87rem;
 }
 
 // TOP-SALES========================================================
@@ -544,9 +536,9 @@ input[name="telegram"] {
 .top-sales__header{
     margin: 90px 0 30px 0;
     color: var(--color-white);
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 400;
-    line-height: 72px;
+    line-height: 4.5rem;
 }
 
 .sales-cards {
@@ -583,14 +575,14 @@ input[name="telegram"] {
     span{
         color: rgb(149, 149, 157);
     }
-    h3{font-size: 48px;
+    h4{font-size: 3rem;
         font-weight: 700;
-        line-height: 48px;
+        line-height: 3rem;
     }
 }
 .card__author {
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 // TOP-INFO======================================================
@@ -605,8 +597,6 @@ input[name="telegram"] {
     margin-top: 32px;
     margin-bottom: 20px;
     color: var(--color-white);
-    font-size: 24px;
-    line-height: 24px;
 }
 .top-info__content {
     display: flex;
@@ -617,7 +607,7 @@ input[name="telegram"] {
 .top-info__item {
     color: var(--color-white);
     padding: 5px 0 5px 40px;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
     background-repeat: no-repeat;
 }

@@ -65,17 +65,13 @@
     // MAIN=====================================
         .m-info{
             max-width: 500px;
-            h1{
-                font-size: 50px;
-                line-height: 84px;
-            }
         }
         .link__buttom{
-            font-size: 16px;
+            font-size: 1rem;
         }
     // AUCTION=====================================    
     .auction-author__subtitle{
-        font-size: 40px;
+        font-size: 2.5rem;
     }
     .auction-main__img {
         max-width: 383px;
@@ -121,10 +117,11 @@
     .sales-cards{
         gap: 15px;
     }
+    
     .card__right{
-        h3{
-            font-size: 25px;
-        }
+       h4{
+        font-size: 2rem;
+       }
     }
     .card__author{
         p{
@@ -147,6 +144,16 @@
     [class*="__inner"]{
         padding: 0 12px;
     }
+    h1{
+        font-size: 2.8rem;
+        line-height: 4.25rem;
+    }
+    h2{
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+    }
+
+// Header======================================
     .header__nav{
         flex-wrap: wrap;
         justify-content: space-between;
@@ -157,7 +164,7 @@
     .nav{
 
         border-top: 1px solid #c4c4c4;
-        padding: 13px 0;
+        padding: 14px 0;
         margin-top: 20px;
         margin-right: 0;
         width: 100%;
@@ -174,11 +181,6 @@
             background-size: cover;
         }
         .m-info{
-            h1{
-                font-size: 35px;
-                font-weight: 400;
-                line-height: 42px;
-            }
         }
         .m-info__link{
             display: flex;
@@ -200,30 +202,18 @@
             width: 100%;
         }
         .auction-header{
-            h1{
-                font-size: 30px;
-                font-weight: 400;
-                line-height: 36px;
-            }
         }
     //PORTFOLIO=======================================
         .portfolio__text{
-            h1{
-                font-size: 30px;
-                line-height: 36px;
-            }
-            h2{
-                display: none;
-            }
             p{
-                font-size: 16px;
+                font-size: 1rem;
             }
         }
         .file__content{
-            font-size: 16px;
+            font-size: 1rem;
         }
         input[name=telegram]{
-            font-size: 16px;
+            font-size: 1rem;
         }
     
     // TOP-SALES=========================================
@@ -240,7 +230,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        max-width: 160px;
+        max-width: 230px;
         width: 100%;
     }
     .card__left{
@@ -297,17 +287,21 @@
 
 
     .top-sales__header{
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 1.8rem;
+        line-height: 2.25rem;
     }
-
+    .card__right{
+        h4{
+         font-size: 1.5rem;
+        }
+     }
     .top-info__header{
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
     }
     .top-info__item{
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 1rem;
+        line-height: 1rem;
     }
     //  STICKERS =========================================
         .stickers-swiper{
@@ -340,13 +334,21 @@
         justify-content: center;
     }
     .footer-top__item{
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 1rem;
+        line-height: 1rem;
     }
 
 }
 
 @include m.mobile{
+    h1{
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+    }
+    h2{
+        font-size: 1.8rem;
+        line-height: 2.25rem;
+    }
     .main{
         background: url(./img/stickers_hero.png) no-repeat  var(--color-black);
         background-position: bottom center;
@@ -358,7 +360,6 @@
     }
 
     // AUCTION=====================================
-    
 }
 
 @include m.mobile_sm{
