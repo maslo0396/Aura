@@ -17,4 +17,19 @@ const swiper1 = new Swiper('.stickers-swiper', {
     },
   });
 
+  const swiper2 = new Swiper('.stickers-swiper__small', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 70,
+  
+    // If we need pagination
+    pagination: {
+      el: '.stickers-pagination-2',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+    },
+  });
+
   

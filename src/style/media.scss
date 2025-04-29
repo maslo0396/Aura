@@ -310,8 +310,18 @@
         line-height: 16px;
     }
     //  STICKERS =========================================
-    
-
+        .stickers-swiper{
+            display: none !important;
+        }
+        .stickers-swiper__small{
+            display: block !important;
+        }
+        .stickers-pagination-2{
+            position: relative !important;
+            display: flex;
+            justify-content: center;
+            margin: 3.75rem 0 5.6rem;
+        }
 
     // FOOTER=========================================
     .footer-top__inner{

@@ -346,6 +346,9 @@
         color: var(--color-white);
     }
 }
+.stickers-swiper__small{
+    display: none !important;
+}
 .stickers-swiper{
     margin-bottom: 90px;
 }
